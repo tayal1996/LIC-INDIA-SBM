@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0 9.5em;
+    color: rgba(21,90,158,255);
+    /* background-color: #c7e0f2; */
+
+}
+body header{
+    padding: 0.5em 0 0 0;
+    /* box-shadow: 2px 2px 5px rgb(0,0,0,0.3); */
+}
+
+body header h1{
+    margin: 1em 0 1.2em;
+    padding: 0.2em;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgb(12,42,80);
+}
+
+.form-container{
+    padding: 0.2em; 
+}
+
+.form-container button{
+    margin: 0.5em 0;
+}
+
+.form-container label{
+    padding-right: 1em;
+}
+
+
+.search-box{
+
+}
+
+ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: rgb(250,203,44); */
+    background: rgba(0, 0, 0, 0) linear-gradient(rgb(254, 206, 0) 0%, rgb(227, 183, 0) 100%);
+    float: right;
+    border-radius: 0.3em 0.3em 0 0;
+
+    position: absolute;
+    top: 2.8em;
+    right: 9.5em;
+}
+  
+li {
+    float: left;
+    text-transform: capitalize;
+}
+  
+li a {
+    font: normal normal 400 normal 1em / normal Helvetica;
+    /* font-weight: 500; */
+    display: block;
+    color: rgb(0, 82, 156);
+    text-align: center;
+    padding: 0.75em 0.8em;
+    text-decoration: none;
+}
+  
+  /* Change the link color to #111 (black) on hover */
+li a:hover {
+    color: rgb(0, 11, 27);
+}
+
+li {
+    border-right: 1px solid #bbb;
+}
+  
+li:last-child {
+    border-right: none;
+}
+
+
+button{
+    background-color: rgb(29,83,156);
+    border: none;
+    width: 6em;
+    color: white;
+    font-weight: 500;
+    padding: 0.5em 1em;
+    /* border-radius: 0.5em; */
+    font-size: ;
+    cursor: pointer;
+}
+
+
+
+/* input[type=file]
+{
+    border: none;
+    border-radius: 0.5em;
+} */
+
+.search-box-complete{
+    padding: 0.2em;
+}
+
+.list-file-name{
+    display: flex;
+}
+.list-file-name p{
+    margin: 0 0 1em 0;
+    padding: 0 1em 0 0;
+}
+
+.search-left{
+    display: flex;
+    /* flex-wrap: initial; */
+    margin-top: 1em;
+}
+.search-left label{
+    font-size: 1.1rem;
+    padding: 0.5em 0;
+    width: 15%;
+}
+
+.search-left input[type=text]{
+    border: 1px solid #707070;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    width: 40%;
+    margin-right: 0.3em;
+}
+
+.search-box button{
+    height: fit-content;
+    margin: 0.2em;
+    /* padding: -0.2em 0; */
+}
+
+
+.result-box{
+    padding: 0 0.2em;
+}
+@media(max-width: 930px){
+    
+}
+
+@media(max-width: 730px){
+
+}

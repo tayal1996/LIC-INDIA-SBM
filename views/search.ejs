@@ -1,0 +1,42 @@
+<%- include('header') -%>
+
+  <div class="search-box-complete">
+    <div class="list-file-name">
+      <p> Files added: </p>
+      <% data.forEach((dat) => { %>
+          <p class="file-name"><%= dat %></p>
+        </a>
+      <% }) %>
+    </div>
+
+    <div class="search-box">
+      <form action="/upload" method="GET">
+        <div class="search-left">
+          <label for="seachbox" id = "searchlabel">Enter Area:</label>
+          <input type="text" name="search" id="search" placeholder="yamuna">
+          <button>List</button>
+        </div>
+      
+      <input type="checkbox" name="byname" id="byname" onchange="doAlertByName(this)"">
+      <label for = "byname"> Search by name</label><br>
+      <input type="checkbox" name="sortadd" id="sortadd">
+      <label for="sortadd"> Sort by house number</label><br>
+      </form>
+    </div>
+  </div>
+
+    <script>
+    
+      var searchl = document.getElementById("searchlabel");
+      function doAlertByName(checkboxElem) {
+        if (checkboxElem.checked) {
+          searchl.innerHTML = "Enter Name:";
+        } else {
+          searchl.innerHTML = "Enter Area:";
+        }
+      }
+
+      
+    </script>
+<%- include('footer') -%>
+

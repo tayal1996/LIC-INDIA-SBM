@@ -1,0 +1,16 @@
+<%- include('header') -%>
+
+
+<div class="form-container">
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="months-box"> Upload the months files: </label>
+      <input type="file" name="multi-files" multiple id="input-multi-files" class="form-control-file border"/>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+</div>
+
+<%- include('footer') -%>
+
